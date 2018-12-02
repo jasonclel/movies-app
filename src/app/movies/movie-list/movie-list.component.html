@@ -1,0 +1,20 @@
+<mat-toolbar>
+  <span>Accedo Movies</span>
+</mat-toolbar>
+<br>
+<h2 class="heading">New Movies</h2>
+<br>
+<div class="horizontal-scroll">
+  <div class="movie-item" *ngFor="let movie of movies" (click)="playMovie(movie)" tabindex="0" (keyup.enter)="playMovie(Movie)">
+    <div><img [src]="movie.images[0].url"></div>
+    <div><p class="text">{{movie.title}}</p></div>
+  </div>
+</div>
+<br>
+<h2 class="heading">Recently Watched Movies</h2>
+<div class="horizontal-scroll">
+  <div class="movie-item" *ngFor="let watched of recentlyWatched" (click)="playMovie(movie)">
+    <div><img [src]="movie.images[0].url"></div>
+    <div><p class="text">{{movie.title}}</p></div>
+  </div>
+</div>

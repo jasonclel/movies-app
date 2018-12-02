@@ -1,0 +1,28 @@
+@media screen and (min-width: 601px){
+    .horizontal-scroll{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+
+    .movie-item{
+        display: inline-block;
+        margin-left: 10px;
+        max-width: 214px;
+        flex-wrap: wrap;
+    }
+
+    .text{
+        max-width: 214px;
+        overflow: hidden;
+        font-family: "Verdana";
+    }
+
+    .heading{
+        font-family: "Verdana";
+    }
+}
+
+@media screen and (max-width: 600px){
+    
+}
