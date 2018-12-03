@@ -6,6 +6,7 @@ export class Movie {
     type: string;
     publishedDate: Date;
     availableDate: Date;
+    createDate: string;
     metadata: {
         value: string;
         name: string;

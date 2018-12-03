@@ -11,10 +11,10 @@
   </div>
 </div>
 <br>
-<h2 class="heading">Recently Watched Movies</h2>
+<h2 class="heading">Recently Watched</h2>
 <div class="horizontal-scroll">
-  <div class="movie-item" *ngFor="let watched of recentlyWatched" (click)="playMovie(movie)">
-    <div><img [src]="movie.images[0].url"></div>
-    <div><p class="text">{{movie.title}}</p></div>
+  <div class="movie-item" *ngFor="let watched of recentlyWatched" (click)="playMovie(watched)">
+    <div><img [src]="watched.images[0].url"></div>
+    <div><p class="text">{{watched.title}}</p></div>
   </div>
 </div>

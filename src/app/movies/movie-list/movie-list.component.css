@@ -24,5 +24,13 @@
 }
 
 @media screen and (max-width: 600px){
-    
+    .text{
+        max-width: 214px;
+        overflow: hidden;
+        font-family: "Verdana";
+    }
+
+    .heading{
+        font-family: "Verdana";
+    }
 }
